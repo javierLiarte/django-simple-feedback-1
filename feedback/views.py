@@ -50,7 +50,7 @@ def feedback(request):
 
     if request.is_ajax():
         return HttpResponse(simplejson.dumps({"feedback":"accepted",
-            'msg': unicode(_('Bien reçu, merci de votre participation'))}),mimetype="json")
+            'msg': unicode(_(u'Bien reçu, merci de votre participation'))}),mimetype="json")
     return HttpResponseRedirect(app_settings.FEEDBACK_THANKS_URL)
 
 @login_required
