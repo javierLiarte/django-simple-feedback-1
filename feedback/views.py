@@ -9,7 +9,7 @@ import models
 from django.db.models import Count
 from django.shortcuts import get_object_or_404,render_to_response
 from django.core.mail import EmailMessage
-from django.utils.translations import ugettext_lazy as _
+from django.utils.translation import ugettext_lazy as _
 
 
 @login_required
