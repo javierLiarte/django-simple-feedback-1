@@ -12,7 +12,7 @@
             {% trans "Dites le nous ,"%}<br/>
             <br/>
 
-            <form id="feedback_form" method="post" action="{% url feedback.views.feedback %}">
+            <form id="feedback_form" method="post" action="{% url 'feedback.views.feedback' %}">
 			  {% csrf_token %}
               <input type="hidden" name="path" value="{{ PATH }}" />
 			  <p>

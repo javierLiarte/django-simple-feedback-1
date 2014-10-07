@@ -9,6 +9,7 @@ import models
 from django.db.models import Count
 from django.shortcuts import get_object_or_404,render_to_response
 from django.core.mail import EmailMessage
+from django.utils.translations import ugettext_lazy as _
 
 
 @login_required
@@ -49,7 +50,7 @@ def feedback(request):
 
     if request.is_ajax():
         return HttpResponse(simplejson.dumps({"feedback":"accepted",
-            'msg': 'Bien reçu, merci de votre participation'}),mimetype="json")
+            'msg': _('Bien reçu, merci de votre participation')}),mimetype="json")
     return HttpResponseRedirect(app_settings.FEEDBACK_THANKS_URL)
 
 @login_required
