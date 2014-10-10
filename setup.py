@@ -29,7 +29,7 @@ METADATA = dict(
 
     description="""Django application that allows you to easily get user
 feedbacks. Users need to be registrated via django.contrib.auth.""",
-    long_description=open('README.rst').read(),
+    #long_description=open('README.rst').read(),
 
     url='http://github.com/Narsil/django-simple-feedback',
     download_url='http://github.com/Narsil/django-simple-feedback',
